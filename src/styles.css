@@ -37,8 +37,17 @@ a {
   background-color: transparent;
 }
 
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .text-primary { 
   color: var(--primary)!important; 
+}
+
+.text-secondary { 
+  color: var(--secondary)!important; 
 }
 
 .text-white { 
@@ -47,6 +56,14 @@ a {
 
 .bg-dark { 
   background-color: var(--gray-dark)!important; 
+}
+
+.bg-light {
+  background-color: var(--light)!important;
+}
+
+.bg-white {
+  background-color: var(--white)!important;
 }
 
 .btn-link.disabled, 
