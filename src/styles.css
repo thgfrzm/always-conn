@@ -1,4 +1,38 @@
 /* global styles */
+:root {
+  --color-seashell:   #f1f1f1;
+  --color-silver:     #bebebe;
+  --color-dove-gray:  #737373;
+  --color-tundora:    #404040;
+  --color-mine-shaft: #262626;
+  --color-watercourse:#057253;
+  --color-deepsea:    #02875a;
+  --color-whiskey:    #da9c6b;
+  --color-crail:      #c16341;
+  --color-red-damask: #d75c4d;
+  scroll-behavior: smooth;
+}
+
+body > app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  position: relative;
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.text-whiskey { color: var(--color-whiskey) }
+.text-crail { color: var(--color-crail) }
+
 .dev * {
   outline: dashed 1px hotpink;
 }
