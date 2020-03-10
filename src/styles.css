@@ -1,15 +1,16 @@
 /* global styles */
 :root {
-  --color-seashell:   #f1f1f1;
-  --color-silver:     #bebebe;
-  --color-dove-gray:  #737373;
-  --color-tundora:    #404040;
-  --color-mine-shaft: #262626;
-  --color-watercourse:#057253;
-  --color-deepsea:    #02875a;
-  --color-whiskey:    #da9c6b;
-  --color-crail:      #c16341;
-  --color-red-damask: #d75c4d;
+  --primary:  #da9c6b;
+  --secondary:#02875a;
+  --success:  #28a745;
+  --info:     #17a2b8;
+  --warning:  #ffc107;
+  --danger:   #dc3545;
+  --white:    #f1f1f1;
+  --light:    #bebebe;
+  --gray:     #737373;
+  --gray-dark:#404040;
+  --dark:     #262626;
   scroll-behavior: smooth;
 }
 
@@ -30,8 +31,28 @@ footer {
   flex-shrink: 0;
 }
 
-.text-whiskey { color: var(--color-whiskey) }
-.text-crail { color: var(--color-crail) }
+a {
+  color: var(--light);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.text-primary { 
+  color: var(--primary)!important; 
+}
+
+.text-white { 
+  color: var(--white)!important; 
+}
+
+.bg-dark { 
+  background-color: var(--gray-dark)!important; 
+}
+
+.btn-link.disabled, 
+.btn-link:disabled {
+  color: var(--light);
+}
 
 .dev * {
   outline: dashed 1px hotpink;
