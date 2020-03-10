@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { PlansAdvantagesComponent } from './plans-advantages/plans-advantages.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     BannerComponent,
-    FooterComponent
+    FooterComponent,
+    PlansAdvantagesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
