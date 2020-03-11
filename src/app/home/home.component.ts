@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   email: string;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  processForm() {
-    const allInfo = `My email is ${this.email}.`;
-    alert(allInfo); 
+  onSubmit() {
+    this.router.navigateByUrl('/signup');
   }
 
 }

@@ -14,7 +14,7 @@ import { SignupComponent } from './signup/signup.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
+      { path: '', pathMatch: 'full', component: HomeComponent },
       { path: 'signup', component: SignupComponent },
     ]),
     FormsModule

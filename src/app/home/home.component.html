@@ -10,7 +10,7 @@
             <h1 class="display-4 text-primary font-weight-bold mb-0">Stay connected</h1>
             <h2 class="h1 text-black">wherever you are</h2>
           </div>
-          <form (ngSubmit)="processForm()">
+          <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
             <div class="input-group">
               <input type="email" 
                      name="email" 
@@ -20,18 +20,18 @@
                      aria-describedby="signupInput" 
                      [(ngModel)]="email"
                      #inputEmail="ngModel"
-                     required 
+                     required
                      email>
               <div class="input-group-append">
-                <button class="btn btn-primary text-uppercase" type="submit" id="button-signup">Try it now<i class="fa fa-chevron-right ml-2" aria-hidden="true"></i></button>
+                <button class="btn btn-primary text-uppercase" type="submit" id="button-signup" [disabled]="!signupForm.form.valid">Try it now<i class="fa fa-chevron-right ml-2" aria-hidden="true"></i></button>
               </div>
             </div>
             <p id="signupInput" class="form-text lead text-muted">Enter your email to create or restart your membership.</p>
-            <div class="invalid-feedback" *ngIf="inputEmail.invalid && inputEmail.dirty">
+            <div class="invalid-feedback" *ngIf="inputEmail.invalid && (inputEmail.dirty || inputEmail.touched)">
               Email is required and needs to be a valid email.
             </div>
             <div class="valid-feedback" *ngIf="inputEmail.valid && inputEmail.dirty">
-              It's ok.
+              Email is correct.
             </div>
           </form>
         </div>
