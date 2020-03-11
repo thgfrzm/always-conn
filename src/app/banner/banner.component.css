@@ -1,6 +1,0 @@
-.bg-banner {
-  background: url('/assets/img/banner-background.jpg') center / cover no-repeat;
-  background-color: var(--color-watercourse);
-  background-blend-mode: hard-light;
-  height: 20rem;
-}
