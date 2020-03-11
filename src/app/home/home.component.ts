@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  email: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  processForm() {
+    const allInfo = `My email is ${this.email}.`;
+    alert(allInfo); 
   }
 
 }

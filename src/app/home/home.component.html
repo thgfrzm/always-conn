@@ -10,15 +10,15 @@
             <h1 class="display-4 text-primary font-weight-bold mb-0">Stay connected</h1>
             <h2 class="h1 text-white">wherever you are</h2>
           </div>
-          <div>
+          <form (ngSubmit)="processForm()">
             <div class="input-group">
-              <input type="email" class="form-control form-control-lg" placeholder="Email address" aria-label="Email address" aria-describedby="signupInput">
+              <input type="email" name="email" [(ngModel)]="email" class="form-control form-control-lg" placeholder="Email address" aria-label="Email address" aria-describedby="signupInput">
               <div class="input-group-append">
-                <button class="btn btn-primary text-uppercase" type="button" id="button-signup">Try it now<i class="fa fa-chevron-right ml-2" aria-hidden="true"></i></button>
+                <button class="btn btn-primary text-uppercase" type="submit" id="button-signup">Try it now<i class="fa fa-chevron-right ml-2" aria-hidden="true"></i></button>
               </div>
             </div>
             <p id="signupInput" class="form-text lead text-white">Enter your email to create or restart your membership.</p>
-          </div>
+          </form>
         </div>
       </div>
     </div>
