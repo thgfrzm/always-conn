@@ -28,10 +28,6 @@ main {
   align-items: center;
 }
 
-section {
-  width: 100%;
-}
-
 footer {
   flex-shrink: 0;
 }
