@@ -15,7 +15,11 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmit() {
-    this.router.navigateByUrl('/signup');
+    this.router.navigate(['/signup'], { 
+      state: { 
+        data: { email: this.email }
+      } 
+    });
   }
 
 }

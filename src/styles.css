@@ -21,17 +21,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-main {
-  position: relative;
-  flex: 1 0 100vh;
-  display: flex;
-  align-items: center;
-}
-
-footer {
-  flex-shrink: 0;
-}
-
 .text-primary { 
   color: var(--primary)!important; 
 }
@@ -54,13 +43,6 @@ footer {
 
 .bg-white {
   background-color: var(--white)!important;
-}
-
-.bg-home {
-  background: url('/assets/img/home-background.jpg') center / cover no-repeat;
-  background-color: var(--secondary);
-  background-blend-mode: lighten;
-  background-attachment: fixed;
 }
 
 .dev * {

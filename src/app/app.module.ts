@@ -1,31 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { PlansAdvantagesComponent } from './plans-advantages/plans-advantages.component';
 import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
+import { PlansComponent } from './plans/plans.component';
+import { PlanDetailsComponent } from './plan-details/plan-details.component';
 
 @NgModule({
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
-      { path: '', pathMatch: 'full', component: HomeComponent },
-      { path: 'signup', component: SignupComponent },
-    ]),
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PlansAdvantagesComponent,
     HomeComponent,
-    SignupComponent
+    SignupComponent,
+    PlansComponent,
+    PlanDetailsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

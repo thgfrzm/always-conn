@@ -1,3 +1,7 @@
+:host {
+  flex-shrink: 0;
+}
+
 a {
   color: var(--light);
   text-decoration: none;

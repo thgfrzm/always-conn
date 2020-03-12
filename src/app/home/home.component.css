@@ -1,11 +1,18 @@
 :host {
-  display: block;
-  width: 100%;
+  position: relative;
+  flex: 1 0 100vh;
+  display: flex;
+  align-items: center;
+  background: url('/assets/img/home-background.jpg') center / cover no-repeat;
+  background-color: var(--secondary);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
 }
 
 .valid-feedback,
 .invalid-feedback {
   display: block;
-  margin-top: inherit;
+  margin-top: .75rem;
   font-size: inherit;
+  text-align: left;
 }
