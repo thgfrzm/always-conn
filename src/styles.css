@@ -21,6 +21,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
 .text-primary { 
   color: var(--primary)!important; 
 }
@@ -43,6 +50,13 @@ body {
 
 .bg-white {
   background-color: var(--white)!important;
+}
+
+.bg-home {
+  background: url('/assets/img/home-background.jpg') center / cover no-repeat;
+  background-color: var(--secondary);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
 }
 
 .btn-primary {

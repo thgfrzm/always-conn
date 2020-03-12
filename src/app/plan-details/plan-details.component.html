@@ -1,6 +1,6 @@
 <main>
   <section name="plan-details">
-    <div class="container">
+    <div class="container-md">
       <div class="row">
         <div class="col">
           <h1 class="h2">Plan details</h1>
@@ -10,12 +10,12 @@
       <div class="row" [ngSwitch]="plan">
         <div *ngSwitchCase="'essential'" class="col">
           <div class="jumbotron jumbotron-fluid pb-4 mb-5">
-            <div class="container">
+            <div class="container-md">
               <h1 class="display-4">Essential Data Plan <span class="badge badge-secondary ml-auto">US$ 15</span></h1>
               <p class="lead">There’s no need to spend a lot of money on a plan to keep you connected to respond to messages and answer calls.</p>
               <hr class="my-4">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <table class="table table-borderless">
                     <tbody>
                       <tr>
@@ -37,26 +37,26 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <p>For a low price labore aliquip sint non ipsum aute nisi labore occaecat sit amet nulla est. Est consectetur sint elit ullamco eu mollit pariatur et aute laborum. Officia sunt aute ullamco deserunt quis proident laborum reprehenderit.</p>
                   <p>Id dolore fugiat adipisicing aliqua excepteur mollit est ut velit. Eiusmod deserunt ut nostrud nostrud eu sunt qui ut velit. Anim sunt Lorem quis veniam fugiat dolore eu magna cillum dolore enim ullamco. Nisi minim quis nulla duis minim anim proident laborum ut ea veniam ex do amet. Tempor tempor sint ullamco nostrud proident pariatur aliqua amet irure quis exercitation ipsum consectetur.</p>
                 </div>
               </div>
-              <div class="row mt-4 px-3">
+              <div class="row flex-column flex-md-row mt-4 px-3">
                 <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
-                <a class="btn btn-lg btn-primary text-white text-uppercase ml-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
+                <a class="btn btn-lg btn-primary text-white text-uppercase ml-md-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
               </div>
             </div>
           </div>
         </div>
         <div *ngSwitchCase="'plus'" class="col">
           <div class="jumbotron jumbotron-fluid pb-4 mb-5">
-            <div class="container">
+            <div class="container-md">
               <h1 class="display-4">Plus Data Plan <span class="badge badge-secondary ml-auto">US$ 25</span></h1>
               <p class="lead">Best plan to access social networks every day, for as long as you want.</p>
               <hr class="my-4">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <table class="table table-borderless">
                     <tbody>
                       <tr>
@@ -78,26 +78,26 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <p>Great cost advantage labore aliquip sint non ipsum aute nisi labore occaecat sit amet nulla est. Est consectetur sint elit ullamco eu mollit pariatur et aute laborum. Officia sunt aute ullamco deserunt quis proident laborum reprehenderit.</p>
                   <p>Id dolore fugiat adipisicing aliqua excepteur mollit est ut velit. Eiusmod deserunt ut nostrud nostrud eu sunt qui ut velit. Anim sunt Lorem quis veniam fugiat dolore eu magna cillum dolore enim ullamco. Nisi minim quis nulla duis minim anim proident laborum ut ea veniam ex do amet. Tempor tempor sint ullamco nostrud proident pariatur aliqua amet irure quis exercitation ipsum consectetur.</p>
                 </div>
               </div>
-              <div class="row mt-4 px-3">
+              <div class="row flex-column flex-md-row mt-4 px-3">
                 <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
-                <a class="btn btn-lg btn-primary text-white text-uppercase ml-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
+                <a class="btn btn-lg btn-primary text-white text-uppercase ml-md-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
               </div>
             </div>
           </div>
         </div>
         <div *ngSwitchCase="'unlimited'" class="col">
           <div class="jumbotron jumbotron-fluid pb-4 mb-5">
-            <div class="container">
+            <div class="container-md">
               <h1 class="display-4">Unlimited Data Plan <span class="badge badge-secondary ml-auto">US$ 40</span></h1>
               <p class="lead">Have the best service we can offer, with no use limit.</p>
               <hr class="my-4">
               <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <table class="table table-borderless">
                     <tbody>
                       <tr>
@@ -119,21 +119,21 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <p>Maximum benefits labore aliquip sint non ipsum aute nisi labore occaecat sit amet nulla est. Est consectetur sint elit ullamco eu mollit pariatur et aute laborum. Officia sunt aute ullamco deserunt quis proident laborum reprehenderit.</p>
                   <p>Id dolore fugiat adipisicing aliqua excepteur mollit est ut velit. Eiusmod deserunt ut nostrud nostrud eu sunt qui ut velit. Anim sunt Lorem quis veniam fugiat dolore eu magna cillum dolore enim ullamco. Nisi minim quis nulla duis minim anim proident laborum ut ea veniam ex do amet. Tempor tempor sint ullamco nostrud proident pariatur aliqua amet irure quis exercitation ipsum consectetur.</p>
                 </div>
               </div>
-              <div class="row mt-4 px-3">
+              <div class="row flex-column flex-md-row mt-4 px-3">
                 <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
-                <a class="btn btn-lg btn-primary text-white text-uppercase ml-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
+                <a class="btn btn-lg btn-primary text-white text-uppercase ml-md-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
               </div>
             </div>
           </div>
         </div>
         <div *ngSwitchDefault class="col">
           <h1 class="display-4">This data plan does not exist (yet)</h1>
-          <div class="row mt-4 px-3">
+          <div class="row flex-column flex-md-row mt-4 px-3">
             <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
           </div>
         </div>
@@ -144,7 +144,7 @@
 
 <!-- Modal for activation -->
 <div class="modal fade" id="activationModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="activationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="activationModalLabel">Activate <i class="fa fa-signal mr-2" aria-hidden="true"></i><span class="text-uppercase">Always Conn {{plan}}</span> plan?</h5>
@@ -165,7 +165,7 @@
 
 <!-- Modal for successful message -->
 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="successModalLabel">Thank you!</h5>
@@ -178,7 +178,7 @@
           <div class="col-4">
             <img src="../assets/img/activation-success.jpg" alt="photo of a woman holding an tablet" class="img-fluid">
           </div>
-          <div class="col-8 px-3">
+          <div class="col-8 px-3 d-flex flex-column justify-content-between">
             <p>Now you are an <i class="fa fa-signal mr-2" aria-hidden="true"></i><span class="text-uppercase">Always Conn {{plan}}</span> user. Ea deserunt consequat laborum cupidatat quis. Dolore culpa qui consectetur enim ut minim!</p>
             <a data-dismiss="modal" class="btn btn-block btn-primary text-white text-uppercase" (click)="redirectUser()" role="button">See your account</a>
           </div>

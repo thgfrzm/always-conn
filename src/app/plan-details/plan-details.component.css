@@ -1,9 +1,40 @@
 :host {
   flex: 1 0 auto;
-  margin-top: 88px; /* header height */
 }
 
 .badge {
   position: absolute;
   right: 30px;
+}
+
+
+
+
+/* [Default Desktop First] Extra large devices (large desktops, 1200px and up) */
+
+
+
+/* Large devices (desktops) */
+@media (max-width: 1199px) {
+  
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 991px) {
+ 
+}
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .badge {
+    right: 15px;
+    top: 0;
+  }
+}
+
+/* Extra small devices (low-end phones) */
+@media (max-width: 575px) {
+  .badge {
+    top: -4rem;
+  }
 }

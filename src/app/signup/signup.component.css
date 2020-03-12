@@ -1,6 +1,5 @@
 :host {
   flex: 1 0 auto;
-  margin-top: 88px; /* header height */
 }
 
 .valid-feedback,

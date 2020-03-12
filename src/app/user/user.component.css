@@ -1,4 +1,7 @@
 :host {
   flex: 1 0 auto;
-  margin-top: 88px; /* header height */
+}
+
+.col-form-label {
+  color: var(--gray);
 }
