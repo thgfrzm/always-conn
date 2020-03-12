@@ -53,7 +53,7 @@ body {
 }
 
 .bg-home {
-  background: url('/assets/img/home-background.jpg') center / cover no-repeat;
+  background: url('./assets/img/home-background.jpg') center / cover no-repeat;
   background-color: var(--secondary);
   background-blend-mode: lighten;
   background-attachment: fixed;

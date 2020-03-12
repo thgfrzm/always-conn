@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,7 +12,6 @@ import { SignupComponent } from './signup/signup.component';
 import { PlansComponent } from './plans/plans.component';
 import { PlanDetailsComponent } from './plan-details/plan-details.component';
 import { UserComponent } from './user/user.component';
-import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   imports: [
