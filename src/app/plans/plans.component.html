@@ -1,0 +1,60 @@
+<main>
+  <section name="available-plans">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="h2">Choose the best plan for you</h1>
+          <p class="lead text-muted">Switch plans whenever you want</p>
+          <p>email: {{email}} / password: {{password}}</p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12">
+          <h2 class="h3">Our plans</h2>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-usd fa-lg" aria-hidden="true"></i> Essential
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">For a low price</h5>
+              <p class="card-text">There’s no need to spend a lot of money on a plan to keep you connected to respond to messages and answer calls.</p>
+            </div>
+            <div class="card-footer">
+              <a (click)="choosePlan('essential')" class="btn btn-block btn-primary text-white stretched-link">Select this plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-usd fa-lg" aria-hidden="true"></i><i class="fa fa-usd fa-lg" aria-hidden="true"></i> Plus
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Great cost advantage</h5>
+              <p class="card-text">Best plan to access social networks every day, for as long as you want.</p>
+            </div>
+            <div class="card-footer">
+              <a (click)="choosePlan('plus')" class="btn btn-block btn-primary text-white stretched-link">Select this plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-diamond fa-lg" aria-hidden="true"></i> Unlimited
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Maximum benefits</h5>
+              <p class="card-text">Have the best service we can offer, with no use limit.</p>
+            </div>
+            <div class="card-footer">
+              <a  (click)="choosePlan('unlimited')" class="btn btn-block btn-primary text-white stretched-link">Select this plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

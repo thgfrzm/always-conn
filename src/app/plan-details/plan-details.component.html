@@ -1,0 +1,27 @@
+<main>
+  <section name="plan-details">
+    <div class="container dev">
+      <div class="row">
+        <div class="col">
+          <h1 class="h2">Plan details</h1>
+          <p class="lead text-muted">Information about this plan</p>
+          <p>email: {{email}} / password: {{password}} / plan: {{plan}}</p>
+          <div>
+            <a class="btn btn-link" (click)="backClicked()" role="button">See other plans</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div *ngIf="plan==='essential'" class="col">
+          <p>essential plan information</p>
+        </div>
+        <div *ngIf="plan==='plus'" class="col">
+          <p>plus plan information</p>
+        </div>
+        <div *ngIf="plan==='unlimited'" class="col">
+          <p>unlimited plan information</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
