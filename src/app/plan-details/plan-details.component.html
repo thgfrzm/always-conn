@@ -45,7 +45,7 @@
               </div>
               <div class="row mt-4 px-3">
                 <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
-                <a class="btn btn-lg btn-primary text-uppercase ml-auto" href="#" role="button">Activate this plan</a>
+                <a class="btn btn-lg btn-primary text-white text-uppercase ml-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@
               </div>
               <div class="row mt-4 px-3">
                 <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
-                <a class="btn btn-lg btn-primary text-uppercase ml-auto" href="#" role="button">Activate this plan</a>
+                <a class="btn btn-lg btn-primary text-white text-uppercase ml-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
               </div>
               <div class="row mt-4 px-3">
                 <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
-                <a class="btn btn-lg btn-primary text-uppercase ml-auto" href="#" role="button">Activate this plan</a>
+                <a class="btn btn-lg btn-primary text-white text-uppercase ml-auto" data-toggle="modal" data-target="#activationModal" role="button">Activate this plan</a>
               </div>
             </div>
           </div>
@@ -142,3 +142,48 @@
     </div>
   </section>
 </main>
+
+<!-- Modal for activation -->
+<div class="modal fade" id="activationModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="activationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="activationModalLabel">Activate <i class="fa fa-signal mr-2" aria-hidden="true"></i><span class="text-uppercase">Always Conn {{plan}}</span> plan?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Fugiat consequat anim veniam laborum cupidatat cupidatat cupidatat duis. In ad fugiat nulla duis nisi. Consectetur laborum aliqua ullamco ea sit amet dolore veniam esse dolor amet cillum dolor occaecat. Quis excepteur incididunt ad consectetur velit qui ex dolor proident consequat. Exercitation ut esse ullamco nulla cupidatat aliqua elit enim proident pariatur sunt. Sunt ut sit fugiat minim ex. Veniam reprehenderit duis cillum elit eu aute enim labore labore esse laboris.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link text-uppercase" data-dismiss="modal">Cancel</button>
+        <button data-dismiss="modal" data-toggle="modal" href="#successModal" type="button" class="btn btn-primary text-uppercase">I'm sure. Activate it</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for successful message -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Thank you!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row no-gutters">
+          <div class="col-4">
+            <img src="../assets/img/activation-success.jpg" alt="photo of a woman holding an tablet" class="img-fluid">
+          </div>
+          <div class="col-8 px-3">
+            <p>Now you are an <i class="fa fa-signal mr-2" aria-hidden="true"></i><span class="text-uppercase">Always Conn {{plan}}</span> user. Ea deserunt consequat laborum cupidatat quis. Dolore culpa qui consectetur enim ut minim!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
