@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { PlansComponent } from './plans/plans.component';
 import { PlanDetailsComponent } from './plan-details/plan-details.component';
+import { UserComponent } from './user/user.component';
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'plans', component: PlansComponent },
-  { path: 'plan/:id', component: PlanDetailsComponent }
+  { path: 'plan/:id', component: PlanDetailsComponent },
+  { path: 'user', component: UserComponent }
 ];
 
 @NgModule({

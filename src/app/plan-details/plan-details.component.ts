@@ -14,11 +14,8 @@ export class PlanDetailsComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    // this.email = history.state.data.email;
-    // this.password = history.state.data.password;
-    // this.plan = this.route.snapshot.params.id;
-    this.email = "thiagoferezim@gmail.com";
-    this.password = "batata";
+    this.email = history.state.data.email;
+    this.password = history.state.data.password;
     this.plan = this.route.snapshot.params.id;
   }
 
@@ -26,6 +23,14 @@ export class PlanDetailsComponent implements OnInit {
     this.router.navigate(['/plans'], { 
       state: { 
         data: { email: this.email, password: this.password }
+      } 
+    });
+  }
+
+  redirectUser(){
+    this.router.navigate(['/user'], { 
+      state: { 
+        data: { email: this.email, password: this.password, plan: this.plan }
       } 
     });
   }

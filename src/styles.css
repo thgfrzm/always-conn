@@ -87,12 +87,12 @@ body {
 
 .btn-link {
   font-weight: 400;
-  color: var(--gray);
+  color: var(--gray) !important;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: var(--gray-dark);
+  color: var(--gray-dark) !important;
   text-decoration: none;
 }
 

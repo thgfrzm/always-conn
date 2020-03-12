@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './signup/signup.component';
 import { PlansComponent } from './plans/plans.component';
 import { PlanDetailsComponent } from './plan-details/plan-details.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { PlanDetailsComponent } from './plan-details/plan-details.component';
     HomeComponent,
     SignupComponent,
     PlansComponent,
-    PlanDetailsComponent
+    PlanDetailsComponent,
+    UserComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
