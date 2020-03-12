@@ -29,7 +29,7 @@ import { UserComponent } from './user/user.component';
     PlanDetailsComponent,
     UserComponent
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '.'}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
