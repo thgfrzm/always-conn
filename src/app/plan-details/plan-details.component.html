@@ -1,25 +1,142 @@
 <main>
   <section name="plan-details">
-    <div class="container dev">
+    <div class="container">
       <div class="row">
         <div class="col">
           <h1 class="h2">Plan details</h1>
           <p class="lead text-muted">Information about this plan</p>
-          <p>email: {{email}} / password: {{password}} / plan: {{plan}}</p>
-          <div>
-            <a class="btn btn-link" (click)="backClicked()" role="button">See other plans</a>
-          </div>
+          <p class="alert alert-warning">email: {{email}} / password: {{password}} / plan: {{plan}}</p>
         </div>
       </div>
-      <div class="row">
-        <div *ngIf="plan==='essential'" class="col">
-          <p>essential plan information</p>
+      <div class="row" [ngSwitch]="plan">
+        <div *ngSwitchCase="'essential'" class="col">
+          <div class="jumbotron jumbotron-fluid pb-4 mb-5">
+            <div class="container">
+              <h1 class="display-4">Essential Data Plan <span class="badge badge-secondary ml-auto">US$ 15</span></h1>
+              <p class="lead">There’s no need to spend a lot of money on a plan to keep you connected to respond to messages and answer calls.</p>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-6">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th scope="row">CALLS</th>
+                        <td>60 min/month</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TEXT</th>
+                        <td>60 SMS/month</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DATA</th>
+                        <td>4 GB/month</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ADDITIONAL DATA</th>
+                        <td>US$ 2.50 per 1GB, 15 min to calls and 15 SMS</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-6">
+                  <p>For a low price labore aliquip sint non ipsum aute nisi labore occaecat sit amet nulla est. Est consectetur sint elit ullamco eu mollit pariatur et aute laborum. Officia sunt aute ullamco deserunt quis proident laborum reprehenderit.</p>
+                  <p>Id dolore fugiat adipisicing aliqua excepteur mollit est ut velit. Eiusmod deserunt ut nostrud nostrud eu sunt qui ut velit. Anim sunt Lorem quis veniam fugiat dolore eu magna cillum dolore enim ullamco. Nisi minim quis nulla duis minim anim proident laborum ut ea veniam ex do amet. Tempor tempor sint ullamco nostrud proident pariatur aliqua amet irure quis exercitation ipsum consectetur.</p>
+                </div>
+              </div>
+              <div class="row mt-4 px-3">
+                <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
+                <a class="btn btn-lg btn-primary text-uppercase ml-auto" href="#" role="button">Activate this plan</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div *ngIf="plan==='plus'" class="col">
-          <p>plus plan information</p>
+        <div *ngSwitchCase="'plus'" class="col">
+          <div class="jumbotron jumbotron-fluid pb-4 mb-5">
+            <div class="container">
+              <h1 class="display-4">Plus Data Plan <span class="badge badge-secondary ml-auto">US$ 25</span></h1>
+              <p class="lead">Best plan to access social networks every day, for as long as you want.</p>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-6">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th scope="row">CALLS</th>
+                        <td>180 min/month</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TEXT</th>
+                        <td>180 SMS/month</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DATA</th>
+                        <td>10 GB/month</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ADDITIONAL DATA</th>
+                        <td>US$ 2.00 per 1GB, 15 min to calls and 15 SMS</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-6">
+                  <p>Great cost advantage labore aliquip sint non ipsum aute nisi labore occaecat sit amet nulla est. Est consectetur sint elit ullamco eu mollit pariatur et aute laborum. Officia sunt aute ullamco deserunt quis proident laborum reprehenderit.</p>
+                  <p>Id dolore fugiat adipisicing aliqua excepteur mollit est ut velit. Eiusmod deserunt ut nostrud nostrud eu sunt qui ut velit. Anim sunt Lorem quis veniam fugiat dolore eu magna cillum dolore enim ullamco. Nisi minim quis nulla duis minim anim proident laborum ut ea veniam ex do amet. Tempor tempor sint ullamco nostrud proident pariatur aliqua amet irure quis exercitation ipsum consectetur.</p>
+                </div>
+              </div>
+              <div class="row mt-4 px-3">
+                <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
+                <a class="btn btn-lg btn-primary text-uppercase ml-auto" href="#" role="button">Activate this plan</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div *ngIf="plan==='unlimited'" class="col">
-          <p>unlimited plan information</p>
+        <div *ngSwitchCase="'unlimited'" class="col">
+          <div class="jumbotron jumbotron-fluid pb-4 mb-5">
+            <div class="container">
+              <h1 class="display-4">Unlimited Data Plan <span class="badge badge-secondary ml-auto">US$ 40</span></h1>
+              <p class="lead">Have the best service we can offer, with no use limit.</p>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-6">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr>
+                        <th scope="row">CALLS</th>
+                        <td>Unlimited</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">TEXT</th>
+                        <td>Unlimited</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DATA</th>
+                        <td>Unlimited</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">ADDITIONAL DATA</th>
+                        <td>Not necessary</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-6">
+                  <p>Maximum benefits labore aliquip sint non ipsum aute nisi labore occaecat sit amet nulla est. Est consectetur sint elit ullamco eu mollit pariatur et aute laborum. Officia sunt aute ullamco deserunt quis proident laborum reprehenderit.</p>
+                  <p>Id dolore fugiat adipisicing aliqua excepteur mollit est ut velit. Eiusmod deserunt ut nostrud nostrud eu sunt qui ut velit. Anim sunt Lorem quis veniam fugiat dolore eu magna cillum dolore enim ullamco. Nisi minim quis nulla duis minim anim proident laborum ut ea veniam ex do amet. Tempor tempor sint ullamco nostrud proident pariatur aliqua amet irure quis exercitation ipsum consectetur.</p>
+                </div>
+              </div>
+              <div class="row mt-4 px-3">
+                <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
+                <a class="btn btn-lg btn-primary text-uppercase ml-auto" href="#" role="button">Activate this plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngSwitchDefault class="col">
+          <h1 class="display-4">This data plan does not exist (yet)</h1>
+          <div class="row mt-4 px-3">
+            <a class="btn btn-lg btn-link text-uppercase" (click)="backClicked()" role="button"><i class="fa fa-chevron-left mr-2" aria-hidden="true"></i> See other plans</a>
+          </div>
         </div>
       </div>
     </div>

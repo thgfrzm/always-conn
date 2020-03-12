@@ -2,3 +2,8 @@
   flex: 1 0 auto;
   margin-top: 88px; /* header height */
 }
+
+.badge {
+  position: absolute;
+  right: 45px;
+}
