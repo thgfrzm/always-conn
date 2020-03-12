@@ -124,8 +124,17 @@
               "devServerTarget": "always-conn:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://thgfrzm.github.io/always-conn/",
+            "name": "Always Conn",
+            "email": "thiagoferezim@gmail.com"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "always-conn"
 }
