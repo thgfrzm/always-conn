@@ -1,0 +1,12 @@
+:host {
+  flex: 1 0 auto;
+  margin-top: 88px; /* header height */
+}
+
+.valid-feedback,
+.invalid-feedback {
+  display: block;
+  margin-top: .75rem;
+  font-size: inherit;
+  text-align: left;
+}

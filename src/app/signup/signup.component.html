@@ -1,1 +1,53 @@
-<p>signup works!</p>
+<main>
+  <section name="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="h2">Create a password to choose a subscription plan</h1>
+          <p class="lead text-muted">Only 2 more steps to go. We hate forms too!</p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-6 offset-3">
+          <form (ngSubmit)="onSubmit()" #signupForm="ngForm">
+            <div class="form-group">
+              <label for="inputEmail">Email address</label>
+              <input type="email" 
+                     name="email" 
+                     id="inputEmail"
+                     class="form-control form-control-lg" 
+                     aria-describedby="signupInput" 
+                     [(ngModel)]="email"
+                     #inputEmail="ngModel"
+                     required
+                     email
+                     readonly>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" 
+                     name="password" 
+                     id="inputPassword"
+                     class="form-control form-control-lg" 
+                     aria-describedby="inputPassword"
+                     [(ngModel)]="password"
+                     #inputPassword="ngModel"
+                     minlength="6"
+                     required>
+              <div class="invalid-feedback" *ngIf="inputPassword.invalid && (inputPassword.dirty || inputPassword.touched)">
+                Password is required and needs to be a valid password.
+              </div>
+              <div class="invalid-feedback" *ngIf="inputPassword.errors?.minlength">
+                Password must be at least 6 characters long.
+              </div>
+              <div class="valid-feedback" *ngIf="inputPassword.valid && inputPassword.dirty">
+                It's a valid password. :)
+              </div>
+            </div>
+            <button class="btn btn-lg btn-block btn-primary text-uppercase my-4" type="submit" id="button-signup" [disabled]="!signupForm.form.valid">Continuar<i class="fa fa-chevron-right ml-2" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
