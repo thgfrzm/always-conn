@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { PlansComponent } from './plans/plans.component';
 import { PlanDetailsComponent } from './plan-details/plan-details.component';
 import { UserComponent } from './user/user.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   imports: [
@@ -28,7 +29,7 @@ import { UserComponent } from './user/user.component';
     PlanDetailsComponent,
     UserComponent
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '.'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
