@@ -21,7 +21,7 @@ const appRoutes: Routes = [
     CommonModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }
+      { scrollPositionRestoration: 'enabled' }
     )
   ],
   exports: [

@@ -144,7 +144,7 @@
 
 <!-- Modal for activation -->
 <div class="modal fade" id="activationModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="activationModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="activationModalLabel">Activate <i class="fa fa-signal mr-2" aria-hidden="true"></i><span class="text-uppercase">Always Conn {{plan}}</span> plan?</h5>
@@ -175,10 +175,10 @@
       </div>
       <div class="modal-body">
         <div class="row no-gutters">
-          <div class="col-4">
+          <div class="d-none d-sm-block col-4">
             <img src="./assets/img/activation-success.jpg" alt="photo of a woman holding an tablet" class="img-fluid">
           </div>
-          <div class="col-8 px-3 d-flex flex-column justify-content-between">
+          <div class="col-12 col-sm-8 px-3 d-flex flex-column justify-content-between">
             <p>Now you are an <i class="fa fa-signal mr-2" aria-hidden="true"></i><span class="text-uppercase">Always Conn {{plan}}</span> user. Ea deserunt consequat laborum cupidatat quis. Dolore culpa qui consectetur enim ut minim!</p>
             <a data-dismiss="modal" class="btn btn-block btn-primary text-white text-uppercase" (click)="redirectUser()" role="button">See your account</a>
           </div>

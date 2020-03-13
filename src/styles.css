@@ -21,13 +21,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Small devices (phones) */
-@media (max-width: 767px) {
-  body {
-    font-size: 1.125rem;
-  }
-}
-
 .text-primary { 
   color: var(--primary)!important; 
 }

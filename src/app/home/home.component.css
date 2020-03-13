@@ -13,12 +13,6 @@
   text-align: left;
 }
 
-:host .header {
-  position: relative;
-  top: 88px;
-  background: pink !important;
-}
-
 /* [Default Desktop First] Extra large devices (large desktops, 1200px and up) */
 
 
