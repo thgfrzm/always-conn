@@ -7,12 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  pageTitle: string;
+  pageHeading: string;
   email: string;
   password: string;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+    this.pageTitle = 'Create a password to choose a subscription plan';
+    this.pageHeading = 'Only 2 more steps to go. We hate forms too!';
     this.email = history.state.data.email;
   }
 

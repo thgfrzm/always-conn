@@ -7,6 +7,10 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./plan-details.component.css']
 })
 export class PlanDetailsComponent implements OnInit {
+  pageTitle: string;
+  pageHeading: string;
+  planTitle: string;
+  planHeading: string;
   email: string;
   password: string;
   plan: string;
@@ -14,6 +18,8 @@ export class PlanDetailsComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.pageTitle = 'Plan details';
+    this.pageHeading = 'Information about this plan';
     this.email = history.state.data.email;
     this.password = history.state.data.password;
     this.plan = this.route.snapshot.params.id;
